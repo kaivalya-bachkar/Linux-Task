@@ -1,0 +1,17 @@
+$TTL 86400
+@ IN SOA ns1.host01.cloudethix.com. admin.host01.cloudethix.com. (
+        2025100201; Serial
+        3600      ; Refresh
+        1800      ; Retry
+        1209600   ; Expire
+        86400 )   ; Minimum TTL
+        IN NS ns1.host01.cloudethix.com.
+        IN NS ns2.host01.cloudethix.com.
+
+@       IN A 10.10.56.211
+ns1     IN A 10.10.56.211
+ns2     IN A 10.10.56.211
+
+; MX Record
+@       IN  MX 10 mail.host01.cloudethix.com.
+mail    IN  A       10.10.56.212
